@@ -179,8 +179,8 @@ export class AppComponent {
       window.scrollTo({ top: 0 });
       const data = this.getTitle(this.router.routerState, this.router.routerState.root);
       console.log('--->>navigation data', data);
-      this.titleService.setTitle(data && data[0] ? this.util.translate(data[0]) + ' | Vegipala By initappz' :
-        this.util.translate('Home') + ' | Vegipala By initappz');
+      this.titleService.setTitle(data && data[0] ? this.util.translate(data[0]) + ' | Vegipala' :
+        this.util.translate('Home') + ' | Vegipala');
     }
 
     if (event instanceof NavigationCancel) {
@@ -274,8 +274,8 @@ export class AppComponent {
                 this.util.translations = language;
                 localStorage.setItem('language', data.data.file);
                 const trl = this.getTitle(this.router.routerState, this.router.routerState.root);
-                this.titleService.setTitle(trl && trl[0] ? this.util.translate(trl[0]) + ' | Vegipala By initappz' :
-                  this.util.translate('Home') + ' | Vegipala By initappz');
+                this.titleService.setTitle(trl && trl[0] ? this.util.translate(trl[0]) + ' | Vegipala' :
+                  this.util.translate('Home') + ' | Vegipala');
               }
               const settings = data.data.settings;
               if (settings && settings.length > 0) {
@@ -357,8 +357,8 @@ export class AppComponent {
               if (language) {
                 this.util.translations = language;
                 const trl = this.getTitle(this.router.routerState, this.router.routerState.root);
-                this.titleService.setTitle(trl && trl[0] ? this.util.translate(trl[0]) + ' | Vegipala By initappz' :
-                  this.util.translate('Home') + ' | Vegipala By initappz');
+                this.titleService.setTitle(trl && trl[0] ? this.util.translate(trl[0]) + ' | Vegipala' :
+                  this.util.translate('Home') + ' | Vegipala');
               }
               const settings = data.data.settings;
               if (settings && settings.length > 0) {
