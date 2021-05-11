@@ -263,13 +263,13 @@ export class SettingsComponent implements OnInit {
       center: location,
       mapTypeControl: false,
       mapTypeControlOptions: {
-        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'Foodies by initappz']
+        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'Foodies']
       }
     };
     this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
     const mapType = new google.maps.StyledMapType(style, { name: 'Grayscale' });
-    this.map.mapTypes.set('Foodies by initappz', mapType);
-    this.map.setMapTypeId('Foodies by initappz');
+    this.map.mapTypes.set('Foodies', mapType);
+    this.map.setMapTypeId('Foodies');
     this.chmod.detectChanges();
     this.addMarker(location);
   }
