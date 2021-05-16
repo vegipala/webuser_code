@@ -123,8 +123,8 @@
      justify-content: center;
 
      .back_img {
-       height: 60px;
-       width: 60px;
+       height: 150px;
+       width: 150px;
        background-position: center;
        background-size: cover;
        background-repeat: no-repeat;
@@ -196,10 +196,20 @@
      }
    }
  }
-// Cheanges make for banner
+
+ // Cheanges make for banner
  @media only screen and (max-width: 600px) {
    .banner_back {
      height: 120px;
+   }
+
+   .container {
+     .categoryList {
+       .back_img {
+         width: 80px;
+         height: 80px;
+       }
+     }
    }
  }
 

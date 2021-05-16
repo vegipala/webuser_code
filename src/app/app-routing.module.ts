@@ -10,8 +10,8 @@ const routes: Routes = [
     component: UsersComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'home',
+        path: 'home',
+        redirectTo: '',
         pathMatch: 'full'
       },
       {
@@ -25,7 +25,7 @@ const routes: Routes = [
         data: { title: 'Order Details' }
       },
       {
-        path: 'home',
+        path: '',
         loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule),
         data: { title: 'Home' }
       },

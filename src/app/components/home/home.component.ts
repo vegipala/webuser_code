@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
     loop: false,
     margin: 20,
     nav: true,
-    dots: false,
+    dots: true,
     autoplay: true,
     responsive: {
       0: {
@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
         items: 3
       },
       800: {
-        items: 3
+        items: 4
       },
       1000: {
         items: 5
@@ -73,17 +73,18 @@ export class HomeComponent implements OnInit {
     loop: false,
     margin: 20,
     nav: true,
-    dots: false,
+    dots: true,
+    touchDrag: true,
     autoplay: true,
     responsive: {
       0: {
-        items: 3,
+        items: 2,
       },
       600: {
         items: 3
       },
       800: {
-        items: 3
+        items: 4
       },
       1000: {
         items: 5
